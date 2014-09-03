@@ -21,7 +21,6 @@
     }
   }
 
-  // Validation: Min Stock, Min Sold and Cost Range must be numeric
   if ($_GET['formStock'] !=''){
     if (!is_numeric($_GET['formStock'])){
       echo "Attention: stock can only be numeric";

@@ -14,6 +14,7 @@
 		return $v1 . " " . $v2;
 	}
 
+	// Removes duplicates
 	$post = array_reduce($views, "arrayChange");
 
 	// if $views > 140, then crop to 140
