@@ -1,0 +1,42 @@
+<html>
+  </head>
+    <title>PART C</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    <style type="text/css">.extra-margin{ margin:50px; } </style>
+  </head>
+
+  <body>
+      <table class="table table-striped">
+            <tr>
+            <td align=left> Name  </td>
+            <td align=left> Variety </td>
+            <td align=center> Year </td>
+            <td align=left> Winery </td>
+            <td align=left> Region </td>
+            <td align=right> Cost </td>
+            <td align=right> Available </td>
+            <td align=right> Stock Sold </td>
+            <td align=right> Sales Revenue </td>
+            </tr>
+
+          <!-- $BeginBlock wine -->
+          <tr>
+            <td align="left">${name}</td>
+            <td align="left">${variety}</td>
+            <td align="center">${year}</td>
+            <td align="left">${winery}</td>
+            <td align="left">${region}</td>
+            <td align="right">${cost}</td>
+            <td align="right">${stock}</td>
+            <td align="right">${item}</td>
+            <td align="right">${price}</td>
+          </tr>
+          <!-- $EndBlock wine -->
+      </table>
+
+  </body>
+</html>
+

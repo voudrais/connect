@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PART D</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style type="text/css">.extra-margin{ margin:50px; } </style>
+</head>
+
+<body>
+    <div class="extra-margin">
+        <form action="results.php" class="form-horizontal" id="form" name="form">
+       
+            <div class="form-group">
+                <label class="control-label col-xs-2">Name</label>
+
+                <div class="col-xs-10">
+                    <input class="form-control" typet="text" name="formWine"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Winery</label>
+
+                <div class="col-xs-10">
+                    <input class="form-control" type="text" name="formWinery" ><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Region</label>
+
+                <div class="col-xs-10">
+                    <select class="form-control" name="formRegion">
+                        <!-- $BeginBlock region -->
+
+                        <option value="${regions}">
+                            ${regions}
+                        </option><!-- $EndBlock region -->
+                    </select><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Variety</label>
+
+                <div class="col-xs-10">
+                    <select class="form-control" name="formVariety">
+                        <!-- $BeginBlock variety -->
+
+                        <option value="${variety}">
+                            ${variety}
+                        </option><!-- $EndBlock variety -->
+                    </select><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Year</label>
+
+                <div class="col-xs-10">
+                    <select class="form-control" name="fromYear">
+                        <!-- $BeginBlock fromYear -->
+
+                        <option value="${fromYear}">
+                            ${fromYear}
+                        </option><!-- $EndBlock fromYear -->
+                    </select> <select class="form-control" name="toYear">
+                        <!-- $BeginBlock toYear -->
+
+                        <option value="${toYear}">
+                            ${toYear}
+                        </option><!-- $EndBlock toYear -->
+                    </select><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Stock</label>
+
+                <div class="col-xs-10">
+                    <input class="form-control" name="formStock" type="text"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Orders</label>
+
+                <div class="col-xs-10">
+                    <input class="form-control" name="formOrder" type="text"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-xs-2">Cost</label>
+
+                <div class="col-xs-10">
+                    <input class="form-control" name="minCost" type="text"><br>
+                    <input class="form-control" name="maxCost" type="text"><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+            <div class="col-xs-offset-2 col-xs-10">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
